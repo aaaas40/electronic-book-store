@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مكتبة المعرفة - معرض الكتب</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/jpeg" href="../images/logo.jpg">
+</head>
+<body>
+    <header class="main-header">
+        
+        <div class="top-bar">
+           <div class="top-bar-container">
+               <div class="top-info">
+                   <span><i class="fa-solid fa-clock"></i> أوقات العمل: 8:00 ص - 10:00 م</span>
+                   <span><i class="fa-solid fa-phone"></i> 953 429 774 967+</span>
+               </div>
+               <div class="top-social">
+                   <span>مرحباً بكم في مكتبة المعرفة</span>
+               </div>
+           </div>
+       </div>
+
+       <div class="header-container">
+           <div class="logo">
+               <a href="../index.html">
+                   <img src="../images/logo.jpg" alt="شعار مكتبة المعرفة" class="logo-img">
+                   <span>مكتبة المعرفة</span>
+               </a>
+           </div>
+           <nav class="navbar">
+               <ul>
+                   <li><a href="../index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                   <li><a href="#" class="active"><i class="fa-solid fa-book-open"></i> الكتب</a></li>
+                   <li><a href="about.html"><i class="fa-solid fa-circle-info"></i> عن المكتبة</a></li>
+                   <li><a href="contact.html"><i class="fa-solid fa-paper-plane"></i> اتصل بنا</a></li>
+               </ul>
+           </nav>
+       </div>
+   </header>
+
+    <main>
+
+        <section class="slider-section">
+            <h2 class="section-title">إصدارات متميزة</h2>
+            <div class="slider-container">
+                <div class="slide active-slide">
+                    <img src="../images/book1.png" alt="أساسيات البرمجة" class="slider-img">
+                    <div class="slide-caption">أساسيات البرمجة بلغة بايثون</div>
+                </div>
+                <div class="slide">
+                    <img src="../images/book2.png" alt="تصميم الواجهات" class="slider-img">
+                    <div class="slide-caption">تصميم الواجهات وبناء المواقع</div>
+                </div>
+                <div class="slide">
+                    <img src="../images/book3.png" alt="فن إدارة الوقت" class="slider-img">
+                    <div class="slide-caption">فن إدارة الوقت والانتاجية</div>
+                </div>
+                <button class="prev-btn" id="prevSlide">&#10094;</button>
+                <button class="next-btn" id="nextSlide">&#10095;</button>
+            </div>
+        </section>
+
+        <section class="features-books">
+            <h2 class="section-title">فهرس المكتبة الشامل</h2>
+            
+            <div class="filter-buttons">
+                <button class="filter-btn active-filter" data-category="all">الكل</button>
+                <button class="filter-btn" data-category="tech">تقنية وبرمجة</button>
+                <button class="filter-btn" data-category="self">تطوير الذات</button>
+            </div>
+
+            <div class="books-grid">
+                <article class="book-card" data-category="tech">
+                    <div class="book-cover">
+                        <img src="../images/book1.png" alt="أساسيات البرمجة" class="book-image" loading="lazy">
+                    </div>
+                    <div class="book-details">
+                        <h3>أساسيات البرمجة</h3>
+                        <p>دليل عملي شامل لتعلم قواعد التفكير البرمجي وبناء التطبيقات.</p>
+                        <button class="btn open-popup-btn" 
+                                data-title="أساسيات البرمجة" 
+                                data-desc="دليل عملي شامل لقواعد التفكير البرمجي وبناء التطبيقات خطوة بخطوة من الصفر.">
+                            <i class="fa-solid fa-eye"></i> عرض التفاصيل
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="tech">
+                    <div class="book-cover">
+                        <img src="../images/book2.png" alt="تصميم الواجهات" class="book-image" loading="lazy">
+                    </div>
+                    <div class="book-details">
+                        <h3>تصميم واجهات المستخدم</h3>
+                        <p>تعلم كيفية تصميم واجهات جذابة ومريحة للمستخدم باستخدام CSS3.</p>
+                        <button class="btn open-popup-btn" 
+                                data-title="تصميم واجهات المستخدم" 
+                                data-desc="تعلم كيفية تصميم واجهات جذابة مع HTML5 و CSS3 ومريحة للمستخدم.">
+                            <i class="fa-solid fa-eye"></i> عرض التفاصيل
+                        </button>
+                    </div>
+                </article>
+
+                <article class="book-card" data-category="self">
+                    <div class="book-cover">
+                        <img src="../images/book3.png" alt="فن إدارة الوقت" class="book-image" loading="lazy">
+                    </div>
+                    <div class="book-details">
+                        <h3>فن إدارة الوقت</h3>
+                        <p>استراتيجيات مجربة لتنظيم وقتك وزيادة إنتاجيتك في العمل والدراسة.</p>
+                        <button class="btn open-popup-btn" 
+                                data-title="فن إدارة الوقت" 
+                                data-desc="استراتيجيات مجربة لتنظيم وقتك وزيادة إنتاجيتك وتحقيق أهدافك.">
+                            <i class="fa-solid fa-eye"></i> عرض التفاصيل
+                        </button>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <div id="book-modal" class="popup-modal">
+        <div class="popup-content">
+            <span class="close-btn" id="close-modal">&times;</span>
+            <h3 id="modal-title">عنوان الكتاب</h3>
+            <p id="modal-desc">وصف الكتاب المختار سيظهر هنا...</p>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+
+            <div class="footer-column">
+                <h3>مكتبة المعرفة</h3>
+                <p>منصة رقمية موثوقة تهتم بنشر الكتب العلمية والأدبية، وتقديم أفضل المراجع للقراء والباحثين بأسلوب سهل ومباشر.</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#" class="social-icon"><i class="fa-brands fa-telegram"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-column">
+                <h4>روابط سريعة</h4>
+                <ul class="footer-links">
+                    <li><a href="../index.html"><i class="fa-solid fa-angle-left"></i> الصفحة الرئيسية</a></li>
+                    <li><a href="#"><i class="fa-solid fa-angle-left"></i> معرض الكتب</a></li>
+                    <li><a href="about.html"><i class="fa-solid fa-angle-left"></i> عن المكتبة</a></li>
+                    <li><a href="contact.html"><i class="fa-solid fa-angle-left"></i> اتصل بنا</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>تواصل معنا</h4>
+                <ul class="footer-contact">
+                    <li><i class="fa-solid fa-location-dot"></i> اليمن - صنعاء</li>
+                    <li><i class="fa-solid fa-envelope"></i> info@almarifa-library.com</li>
+                    <li><i class="fa-solid fa-phone"></i> 953 429 774 967+ </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة &copy; 2026 - مكتبة المعرفة الرقمية</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
